@@ -1,0 +1,10 @@
+
+public class Skelett extends Monster {
+
+	@Override
+	public void angreifen() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

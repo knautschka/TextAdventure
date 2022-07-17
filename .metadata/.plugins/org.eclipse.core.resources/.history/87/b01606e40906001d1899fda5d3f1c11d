@@ -1,0 +1,17 @@
+
+public class Skelett extends Monster {
+
+	private String skelettName;
+	
+	private int angriff;
+	
+	private int verteidigung;
+	
+	private int leben;
+	
+	@Override
+	public int angreifen() {
+		return this.angriff;		
+	}
+
+}
