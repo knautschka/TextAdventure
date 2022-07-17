@@ -1,0 +1,9 @@
+
+public class Spieler {
+
+	private String spielerName;
+	private int leben;
+	private int angriff;
+	private int verteidigung;
+	
+}
