@@ -57,6 +57,7 @@ public class Spieler {
 
 	public void setPositionLinks(int positionLinks) {
 		this.positionLinks = positionLinks;
+		System.out.println("Geht " + positionLinks + " nach links.");
 	}
 
 

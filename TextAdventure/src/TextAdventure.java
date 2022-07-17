@@ -17,9 +17,9 @@ public class TextAdventure {
 		System.out.println("Dies sind nun eure Charakterwerte:");
 		System.out.println(spieler);
 		
-		/* Skelett skelett = new Skelett("Alfred", 5, 2, 3, 3, 0, 0, 0);
+		Skelett skelett = new Skelett("Alfred", 5, 2, 10, 3, 0, 0, 0);
 		
-		System.out.println("Ein Skelett erscheint.");
+		/* System.out.println("Ein Skelett erscheint.");
 		
 		
 		System.out.println("Skelett greift an mit einer Angriffsstärke von " + skelett.getAngriff());
@@ -32,9 +32,37 @@ public class TextAdventure {
 			System.out.println("Das Skelett hat getroffen. " + spieler.getSpielerName() + " hat jetzt noch " + spieler.getLeben() + " Leben.");
 		} */
 		
+		spieler.setPositionLinks(spieler.getPositionLinks() + 3);
+		
+		if (skelett.getPositionGeradeaus() == spieler.getPositionGeradeaus() &&
+				skelett.getPositionLinks() == spieler.getPositionLinks() &&
+				skelett.getPositionRechts() == spieler.getPositionRechts() &&
+				skelett.getPositionRueckwaerts() == spieler.getPositionRueckwaerts()) {
+			System.out.println(skelett);
+			System.out.println("Was möchtest du tun?");
+			System.out.println("1: Kämpfen, 2: Fliehen");
+			int spielerAktion = input.nextInt();
+			if(spielerAktion == 1) {
+				//TODO: Kämpfen --> die Verteidigungswerte werden bisher noch nicht berücksichtigt
+				for(skelett.getLeben();skelett.getLeben()>0;skelett.setLeben(skelett.getLeben()-spieler.getAngriff())) {
+					System.out.println(spieler.getSpielerName() + " greift an. Fügt " + skelett.getSkelettName() + " " + spieler.getAngriff() + " Schaden zu.");
+					spieler.setLeben(spieler.getLeben() - skelett.getAngriff());
+					System.out.println(skelett.getSkelettName() + " greift an. Fügt " + spieler.getSpielerName() + " " + skelett.getAngriff() + " Schaden zu.");
+				}
+				if(skelett.getLeben() <= 0) {
+					System.out.println(spieler.getSpielerName() + " hat " + skelett.getSkelettName() + " besiegt.");
+				}
+			} else if(spielerAktion == 2) {
+				// TODO: Fliehen
+				System.out.println("Du bist geflohen.");
+			} else {
+				System.out.println("Das war keine korrekte Eingabe.");
+			}
+		}
 		
 		
 		
 	}
+	
 
 }

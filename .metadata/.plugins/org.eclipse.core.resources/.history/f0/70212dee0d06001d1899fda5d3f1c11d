@@ -1,0 +1,101 @@
+
+public class Skelett extends Monster {
+
+	private String skelettName;
+	
+	private int angriff;
+	
+	private int verteidigung;
+	
+	private int leben;
+	
+	private int positionLinks;
+	private int positionRechts;
+	private int positionGeradeaus;
+	private int positionRueckwaerts;
+	
+	
+
+	public Skelett(String skelettName, int angriff, int verteidigung, int leben, int positionLinks, int positionRechts, int positionGeradeaus, int positionRueckwaerts) {
+		super();
+		this.skelettName = skelettName;
+		this.angriff = angriff;
+		this.verteidigung = verteidigung;
+		this.leben = leben;
+		this.positionLinks = positionLinks;
+		this.positionRechts = positionRechts;
+		this.positionGeradeaus = positionGeradeaus;
+		this.positionRueckwaerts = positionRueckwaerts;
+	}
+
+	public String getSkelettName() {
+		return skelettName;
+	}
+
+	public void setSkelettName(String skelettName) {
+		this.skelettName = skelettName;
+	}
+
+	public int getAngriff() {
+		return angriff;
+	}
+
+	public void setAngriff(int angriff) {
+		this.angriff = angriff;
+	}
+
+	public int getVerteidigung() {
+		return verteidigung;
+	}
+
+	public void setVerteidigung(int verteidigung) {
+		this.verteidigung = verteidigung;
+	}
+
+	public int getLeben() {
+		return leben;
+	}
+
+	public void setLeben(int leben) {
+		this.leben = leben;
+	}
+
+	public int getPositionLinks() {
+		return positionLinks;
+	}
+
+	public void setPositionLinks(int positionLinks) {
+		this.positionLinks = positionLinks;
+	}
+
+	public int getPositionRechts() {
+		return positionRechts;
+	}
+
+	public void setPositionRechts(int positionRechts) {
+		this.positionRechts = positionRechts;
+	}
+
+	public int getPositionGeradeaus() {
+		return positionGeradeaus;
+	}
+
+	public void setPositionGeradeaus(int positionGeradeaus) {
+		this.positionGeradeaus = positionGeradeaus;
+	}
+
+	public int getPositionRueckwaerts() {
+		return positionRueckwaerts;
+	}
+
+	public void setPositionRueckwaerts(int positionRueckwaerts) {
+		this.positionRueckwaerts = positionRueckwaerts;
+	}
+	
+	@Override
+	public String toString() {
+		return "Skelett " + skelettName + " erscheint.";
+		
+	}
+
+}

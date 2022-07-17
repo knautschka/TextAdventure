@@ -92,6 +92,13 @@ public class Skelett extends Monster {
 		this.positionRueckwaerts = positionRueckwaerts;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Du triffst auf Skelett " + skelettName + ". " +
+				skelettName + " hat " + leben + " Leben, " +
+				angriff + " Angriffskraft und " +
+				verteidigung + " Verteidigungskraft.";
+		
+	}
 
 }
