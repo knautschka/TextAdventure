@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/Skelli/Documents/TextAdventure/.metadata/.plugins/org.eclipse.jdt.core
+1924627776.index
+1865797976.index
+2888586291.index
