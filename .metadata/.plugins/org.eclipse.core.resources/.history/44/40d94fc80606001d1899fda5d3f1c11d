@@ -13,12 +13,6 @@ public class TextAdventure {
 		System.out.println("Sagt mir... Wie ist euer Name?");
 		
 		spieler.setSpielerName(input.next());
-		spieler.setLeben(10);
-		spieler.setAngriff(7);
-		spieler.setVerteidigung(5);
-		
-		System.out.println("Dies sind nun eure Charakterwerte:");
-		System.out.println(spieler);
 		
 	}
 

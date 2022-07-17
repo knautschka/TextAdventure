@@ -17,9 +17,6 @@ public class TextAdventure {
 		spieler.setAngriff(7);
 		spieler.setVerteidigung(5);
 		
-		System.out.println("Dies sind nun eure Charakterwerte:");
-		System.out.println(spieler);
-		
 	}
 
 }

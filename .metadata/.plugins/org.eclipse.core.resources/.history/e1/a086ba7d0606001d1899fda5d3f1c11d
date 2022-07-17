@@ -1,0 +1,12 @@
+
+public class TextAdventure {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Willkommen zum Text-Adventure!");
+
+		Spieler spieler = new Spieler("", 0, 0, 0);
+		
+	}
+
+}
