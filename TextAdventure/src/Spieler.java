@@ -5,21 +5,17 @@ public class Spieler {
 	private int leben;
 	private int angriff;
 	private int verteidigung;
-	private int positionLinks;
-	private int positionRechts;
-	private int positionGeradeaus;
-	private int positionRueckwaerts;
+	private int positionSeitwaerts;
+	private int positionObenUnten;
 	
 	
-	public Spieler(String spielerName, int leben, int angriff, int verteidigung, int positionLinks, int positionRechts, int positionGeradeaus, int positionRueckwaerts) {
+	public Spieler(String spielerName, int leben, int angriff, int verteidigung, int positionSeitwaerts, int positionObenUnten) {
 		this.spielerName = spielerName;
 		this.leben = leben;
 		this.angriff = angriff;
 		this.verteidigung = verteidigung;
-		this.positionLinks = positionLinks;
-		this.positionRechts = positionRechts;
-		this.positionGeradeaus = positionGeradeaus;
-		this.positionRueckwaerts = positionRueckwaerts;
+		this.positionSeitwaerts = positionSeitwaerts;
+		this.positionObenUnten = positionObenUnten;
 	}
 	
 	
@@ -48,48 +44,22 @@ public class Spieler {
 		this.verteidigung = verteidigung;
 	}
 
-	
-	
-	public int getPositionLinks() {
-		return positionLinks;
+	public int getPositionSeitwaerts() {
+		return positionSeitwaerts;
+	}
+
+	public void setPositionSeitwaerts(int positionSeitwaerts) {
+		this.positionSeitwaerts = positionSeitwaerts;
+	}
+
+	public int getPositionObenUnten() {
+		return positionObenUnten;
 	}
 
 
-	public void setPositionLinks(int positionLinks) {
-		this.positionLinks = positionLinks;
-		System.out.println("Geht " + positionLinks + " nach links.");
+	public void setPositionObenUnten(int positionObenUnten) {
+		this.positionObenUnten = positionObenUnten;
 	}
-
-
-	public int getPositionRechts() {
-		return positionRechts;
-	}
-
-
-	public void setPositionRechts(int positionRechts) {
-		this.positionRechts = positionRechts;
-	}
-
-
-	public int getPositionGeradeaus() {
-		return positionGeradeaus;
-	}
-
-
-	public void setPositionGeradeaus(int positionGeradeaus) {
-		this.positionGeradeaus = positionGeradeaus;
-	}
-
-
-	public int getPositionRueckwaerts() {
-		return positionRueckwaerts;
-	}
-
-
-	public void setPositionRueckwaerts(int positionRueckwaerts) {
-		this.positionRueckwaerts = positionRueckwaerts;
-	}
-
 
 	@Override
 	public String toString() {

@@ -1,0 +1,11 @@
+
+public class Beutel {
+	
+	int beutelGroesse;
+	
+	public Beutel(int beutelGroesse) {
+		this.beutelGroesse = beutelGroesse;
+	}
+	
+	
+}
