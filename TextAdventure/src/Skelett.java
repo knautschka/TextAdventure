@@ -9,23 +9,19 @@ public class Skelett extends Monster {
 	
 	private int leben;
 	
-	private int positionLinks;
-	private int positionRechts;
-	private int positionGeradeaus;
-	private int positionRueckwaerts;
+	private int positionSeitwaerts;
+	private int positionObenUnten;
 	
 	
 
-	public Skelett(String skelettName, int angriff, int verteidigung, int leben, int positionLinks, int positionRechts, int positionGeradeaus, int positionRueckwaerts) {
+	public Skelett(String skelettName, int angriff, int verteidigung, int leben, int positionSeitwaerts, int positionObenUnten) {
 		super();
 		this.skelettName = skelettName;
 		this.angriff = angriff;
 		this.verteidigung = verteidigung;
 		this.leben = leben;
-		this.positionLinks = positionLinks;
-		this.positionRechts = positionRechts;
-		this.positionGeradeaus = positionGeradeaus;
-		this.positionRueckwaerts = positionRueckwaerts;
+		this.positionSeitwaerts = positionSeitwaerts;
+		this.positionObenUnten = positionObenUnten;
 	}
 
 	public String getSkelettName() {
@@ -60,36 +56,21 @@ public class Skelett extends Monster {
 		this.leben = leben;
 	}
 
-	public int getPositionLinks() {
-		return positionLinks;
+	public int getPositionSeitwaerts() {
+		return positionSeitwaerts;
 	}
 
-	public void setPositionLinks(int positionLinks) {
-		this.positionLinks = positionLinks;
+	public void setPositionSeitwaerts(int positionSeitwaerts) {
+		this.positionSeitwaerts = positionSeitwaerts;	
 	}
 
-	public int getPositionRechts() {
-		return positionRechts;
+	public int getPositionObenUnten() {
+		return positionObenUnten;
 	}
 
-	public void setPositionRechts(int positionRechts) {
-		this.positionRechts = positionRechts;
-	}
 
-	public int getPositionGeradeaus() {
-		return positionGeradeaus;
-	}
-
-	public void setPositionGeradeaus(int positionGeradeaus) {
-		this.positionGeradeaus = positionGeradeaus;
-	}
-
-	public int getPositionRueckwaerts() {
-		return positionRueckwaerts;
-	}
-
-	public void setPositionRueckwaerts(int positionRueckwaerts) {
-		this.positionRueckwaerts = positionRueckwaerts;
+	public void setPositionObenUnten(int positionObenUnten) {
+		this.positionObenUnten = positionObenUnten;
 	}
 	
 	@Override
