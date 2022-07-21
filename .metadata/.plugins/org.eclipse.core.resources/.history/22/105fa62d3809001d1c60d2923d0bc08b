@@ -77,11 +77,6 @@ public class TextAdventure {
 							System.out.println("Das war keine korrekte Eingabe.");
 						}
 					}
-					
-					if(spieler.getLeben() <= 0) {
-						System.out.println(spieler.getSpielerName() + " wurde besiegt. Er geht traurig nach Hause.");
-					}
-					
 					if (skelett.getLeben() <= 0) {
 						System.out.println(spieler.getSpielerName() + " hat " + skelett.getSkelettName() + " besiegt.");
 					}
@@ -113,7 +108,6 @@ public class TextAdventure {
 						
 						if(wahrscheinlichkeit >= 80) {
 							ork.wutanfall();
-							System.out.println("Der Ork hat einen Wutanfall. Seine Angriffskraft beträgt nun " + ork.getAngriff());
 						}
 						
 						System.out.println("Möchtest du weiterkämpfen?");
@@ -128,11 +122,6 @@ public class TextAdventure {
 							System.out.println("Das war keine korrekte Eingabe.");
 						}
 					}
-					
-					if(spieler.getLeben() <= 0) {
-						System.out.println(spieler.getSpielerName() + " wurde besiegt. Er geht traurig nach Hause.");
-					}
-					
 					if (ork.getLeben() <= 0) {
 						System.out.println(spieler.getSpielerName() + " hat " + ork.getOrkName() + " besiegt.");
 					}
