@@ -78,10 +78,6 @@ public class TextAdventure {
 						}
 					}
 					
-					if(spieler.getLeben() <= 0) {
-						System.out.println(spieler.getSpielerName() + " wurde besiegt. Er geht traurig nach Hause.");
-					}
-					
 					if (skelett.getLeben() <= 0) {
 						System.out.println(spieler.getSpielerName() + " hat " + skelett.getSkelettName() + " besiegt.");
 					}

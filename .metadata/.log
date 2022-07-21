@@ -561,3 +561,118 @@ Binding(ALT+COMMAND+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.214
+!MESSAGE Attempt to redefine project facet action "glassfish.web#4.0#INSTALL" in plugin org.eclipse.payara.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.215
+!MESSAGE Attempt to redefine project facet action "glassfish.web#4.0#UNINSTALL" in plugin org.eclipse.payara.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.215
+!MESSAGE Attempt to redefine project facet action "glassfish.ejb#5#INSTALL" in plugin org.eclipse.glassfish.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.215
+!MESSAGE Attempt to redefine project facet action "glassfish.ejb#5#UNINSTALL" in plugin org.eclipse.glassfish.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.215
+!MESSAGE Attempt to redefine project facet action "glassfish.ejb#3.1#INSTALL" in plugin org.eclipse.payara.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.215
+!MESSAGE Attempt to redefine project facet action "glassfish.ejb#3.1#UNINSTALL" in plugin org.eclipse.payara.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.216
+!MESSAGE Attempt to redefine project facet action "glassfish.web#3.1#INSTALL" in plugin org.eclipse.glassfish.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.216
+!MESSAGE Attempt to redefine project facet action "glassfish.web#3.1#UNINSTALL" in plugin org.eclipse.glassfish.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.216
+!MESSAGE Attempt to redefine project facet action "glassfish.web#5#INSTALL" in plugin org.eclipse.glassfish.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.216
+!MESSAGE Attempt to redefine project facet action "glassfish.web#5#UNINSTALL" in plugin org.eclipse.glassfish.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.217
+!MESSAGE Attempt to redefine project facet action "glassfish.ejb#4.0#INSTALL" in plugin org.eclipse.payara.tools.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2022-07-21 22:11:07.217
+!MESSAGE Attempt to redefine project facet action "glassfish.ejb#4.0#UNINSTALL" in plugin org.eclipse.payara.tools.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-07-21 22:58:05.462
+!MESSAGE No repository found at http://download.eclipse.org/sapphire/9.1.1/repository.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-07-21 22:58:08.779
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/payara/Payara_PatchedProjects/eclipse/payaratools/2020/latest/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-07-21 22:58:14.816
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-07-21 22:58:17.199
+!MESSAGE No repository found at http://download.eclipse.org/glassfish-tools/1.0.0/repository.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-07-21 22:58:37.384
+!MESSAGE Connection to http://dl.bintray.com/testng-team/testng-p2-release/p2.index failed on dl.bintray.com:80 failed to respond. Retry attempt 0 started
+!STACK 0
+org.apache.http.NoHttpResponseException: dl.bintray.com:80 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-07-21 22:58:37.964
+!MESSAGE Unable to read repository at http://dl.bintray.com/testng-team/testng-p2-release/content.xml.
+!STACK 0
+org.apache.http.NoHttpResponseException: dl.bintray.com:80 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:248)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-07-21 22:58:52.207
+!MESSAGE Connection to http://dl.bintray.com/testng-team/testng-p2-release/p2.index failed on dl.bintray.com:80 failed to respond. Retry attempt 0 started
+!STACK 0
+org.apache.http.NoHttpResponseException: dl.bintray.com:80 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
